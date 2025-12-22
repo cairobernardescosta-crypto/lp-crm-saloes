@@ -1,2 +1,14 @@
-# lp-crm-saloes
-Landing page para CRM focado em salões de beleza, com captação de leads, apresentação de funcionalidades e CTA para agendamento de demonstração.
+# Agenda Fácil IA
+
+Landing Page oficial do CRM com IA para Salões.
+
+## Como usar
+
+1. Suba os arquivos no GitHub
+2. Ative o GitHub Pages
+3. Ajuste o link do WhatsApp no index.html
+4. Página pronta para rodar
+
+Sem dependências externas.
+Mobile-first.
+CTA direto.
