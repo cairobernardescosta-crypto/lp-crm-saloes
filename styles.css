@@ -42,6 +42,11 @@ li {
   text-align: center;
 }
 
+.hero .container {
+  padding-top: 64px;
+  padding-bottom: 28px;
+}
+
 .badge {
   display: inline-block;
   background: #22c55e;
@@ -50,6 +55,24 @@ li {
   border-radius: 4px;
   font-size: 14px;
   margin-bottom: 16px;
+}
+
+.hero h1 {
+  font-size: 44px;
+  margin-bottom: 14px;
+}
+
+.hero p {
+  max-width: 720px;
+  margin: 0 auto 18px;
+  opacity: 0.92;
+}
+
+.hero-small {
+  display: block;
+  margin-top: 6px;
+  opacity: 0.9;
+  text-align: center;
 }
 
 /* BOTÕES */
@@ -72,11 +95,14 @@ li {
   border: 1px solid #ffffff;
 }
 
-.hero-small {
+/* IMAGEM DO HERO */
+.hero-image {
   display: block;
-  margin-top: 6px;
-  opacity: 0.9;
-  text-align: center;
+  width: 100%;
+  max-width: 900px;
+  margin: 26px auto 0;
+  height: auto;
+  border-radius: 26px;
 }
 
 /* PROVA */
@@ -84,6 +110,11 @@ li {
   background: #ffffff;
   text-align: center;
   font-weight: bold;
+}
+
+.proof .container {
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 /* GRID */
@@ -132,46 +163,34 @@ footer {
   opacity: 0.8;
 }
 
-/* AJUSTE HERO + IMAGEM */
-.hero .container {
-  padding-top: 56px;
-  padding-bottom: 0;
-}
-
-.hero-image {
-  display: block;
-  margin: 8px auto 0;
-  max-width: 780px;
-  width: 100%;
-  height: auto;
-  border-radius: 30px;
-}
-
-/* PROVA */
-.proof .container {
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-
 /* MOBILE */
 @media (max-width: 768px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
-
   .container {
     padding: 40px 16px;
   }
 
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
   .hero .container {
-    padding-top: 40px;
-    padding-bottom: 0;
+    padding-top: 44px;
+    padding-bottom: 18px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .hero p {
+    max-width: 520px;
+    margin-bottom: 14px;
   }
 
   .hero-image {
-    margin: 6px auto 0;
-    max-width: 92%;
-    border-radius: 20px;
+    max-width: 96%;
+    margin-top: 18px;
+    border-radius: 18px;
   }
 
   .proof .container {
@@ -179,3 +198,4 @@ footer {
     padding-bottom: 12px;
   }
 }
+
