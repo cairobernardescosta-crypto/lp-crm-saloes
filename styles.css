@@ -6,8 +6,8 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  color: #111;
-  background: #fff;
+  color: #e5e5e5;
+  background: #000000;
   line-height: 1.6;
 }
 
@@ -20,10 +20,12 @@ body {
 h1, h2, h3, h4 {
   line-height: 1.2;
   margin-bottom: 16px;
+  color: #ffffff;
 }
 
 p {
   margin-bottom: 16px;
+  color: #cfcfcf;
 }
 
 ul, ol {
@@ -35,22 +37,25 @@ li {
   margin-bottom: 8px;
 }
 
+/* HERO */
 .hero {
-  background: #0f172a;
-  color: #fff;
+  background: #000000;
+  color: #ffffff;
   text-align: center;
 }
 
+/* BADGE */
 .badge {
   display: inline-block;
   background: #22c55e;
-  color: #0f172a;
+  color: #000000;
   padding: 6px 12px;
   border-radius: 4px;
   font-size: 14px;
   margin-bottom: 16px;
 }
 
+/* BOTÕES */
 .btn {
   display: inline-block;
   padding: 14px 22px;
@@ -61,20 +66,23 @@ li {
 
 .primary {
   background: #22c55e;
-  color: #0f172a;
+  color: #000000;
 }
 
 .secondary {
-  background: #0f172a;
-  color: #fff;
+  background: #0a0a0a;
+  color: #ffffff;
+  border: 1px solid #2a2a2a;
 }
 
+/* PROVA */
 .proof {
-  background: #f8fafc;
+  background: #0a0a0a;
   text-align: center;
   font-weight: bold;
 }
 
+/* GRIDS */
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -87,14 +95,17 @@ li {
   gap: 24px;
 }
 
+/* CARDS */
 .card {
-  border: 1px solid #e5e7eb;
+  background: #0a0a0a;
+  border: 1px solid #1f1f1f;
   padding: 24px;
   border-radius: 8px;
 }
 
+/* OFERTA */
 .offer {
-  background: #f1f5f9;
+  background: #050505;
   text-align: center;
 }
 
@@ -102,13 +113,15 @@ li {
   font-size: 32px;
   font-weight: bold;
   margin: 16px 0;
+  color: #ffffff;
 }
 
+/* FOOTER */
 footer {
   text-align: center;
   padding: 32px 20px;
-  background: #020617;
-  color: #e5e7eb;
+  background: #000000;
+  color: #9ca3af;
 }
 
 .small {
