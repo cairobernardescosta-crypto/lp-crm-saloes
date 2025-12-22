@@ -146,3 +146,11 @@ footer {
   height: auto;
   border-radius: 12px;
 }
+.hero .container {
+  padding-bottom: 24px;
+}
+
+.hero-image {
+  margin-top: 16px;
+}
+
