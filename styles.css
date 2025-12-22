@@ -1,160 +1,38 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #111;
-  background: #ffffff;
-  line-height: 1.6;
-}
-
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 48px 20px;
-}
-
-h1, h2, h3, h4 {
-  line-height: 1.2;
-  margin-bottom: 16px;
-}
-
-p {
-  margin-bottom: 16px;
-}
-
-ul, ol {
-  margin: 16px 0;
-  padding-left: 20px;
-}
-
-li {
-  margin-bottom: 8px;
-}
-
-/* HERO – antes azul, agora preto */
-.hero {
-  background: #000000;
-  color: #ffffff;
-  text-align: center;
-}
-
-/* BADGE */
-.badge {
-  display: inline-block;
-  background: #22c55e;
-  color: #000000;
-  padding: 6px 12px;
-  border-radius: 4px;
-  font-size: 14px;
-  margin-bottom: 16px;
-}
-
-/* BOTÕES */
-.btn {
-  display: inline-block;
-  padding: 14px 22px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.primary {
-  background: #22c55e;
-  color: #000000;
-}
-
-/* botão secundário – antes azul */
-.secondary {
-  background: #000000;
-  color: #ffffff;
-}
-
-/* PROVA – mantém branco */
-.proof {
-  background: #ffffff;
-  text-align: center;
-  font-weight: bold;
-}
-
-/* GRID */
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 32px;
-}
-
-/* CARDS */
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 24px;
-}
-
-.card {
-  border: 1px solid #e5e7eb;
-  padding: 24px;
-  border-radius: 8px;
-  background: #ffffff;
-}
-
-/* OFERTA – mantém claro */
-.offer {
-  background: #f5f5f5;
-  text-align: center;
-}
-
-.price {
-  font-size: 32px;
-  font-weight: bold;
-  margin: 16px 0;
-}
-
-/* FOOTER – antes azul, agora preto */
-footer {
-  text-align: center;
-  padding: 32px 20px;
-  background: #000000;
-  color: #e5e7eb;
-}
-
-.small {
-  font-size: 14px;
-  opacity: 0.8;
-}
-
-.hero-small {
-  display: block;
-  margin-top: 6px;
-  opacity: 0.9;
-  text-align: center;
-}
-
+/* Ajuste fino de espaçamento por seção */
 .hero .container {
-  padding-bottom: 0px; /* isso aqui tava criando espaço */
+  padding-top: 56px;
+  padding-bottom: 12px; /* cola a imagem e evita buraco */
 }
 
 .hero-image {
-  display: block;
-  margin: 14px auto 0; /* aproxima do texto */
+  margin: 12px auto 12px; /* controla espaço acima e abaixo da imagem */
   max-width: 900px;
   width: 100%;
   height: auto;
   border-radius: 30px;
 }
 
+/* Tira o "tapete branco" gigante depois do hero */
+.proof .container {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
 /* mobile */
 @media (max-width: 768px) {
-  .grid {
-    grid-template-columns: 1fr;
+  .hero .container {
+    padding-top: 40px;
+    padding-bottom: 10px;
   }
 
   .hero-image {
-    margin-top: 10px;
+    margin: 10px auto 10px;
     max-width: 100%;
+  }
+
+  .proof .container {
+    padding-top: 14px;
+    padding-bottom: 14px;
   }
 }
 
