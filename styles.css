@@ -1,39 +1,40 @@
-/* Ajuste fino de espaçamento por seção */
+/* HERO */
 .hero .container {
   padding-top: 56px;
-  padding-bottom: 12px; /* cola a imagem e evita buraco */
+  padding-bottom: 0;
 }
 
+/* IMAGEM DO HERO */
 .hero-image {
-  margin: 12px auto 12px; /* controla espaço acima e abaixo da imagem */
-  max-width: 900px;
+  display: block;
+  margin: 8px auto 0;
+  max-width: 780px;
   width: 100%;
   height: auto;
   border-radius: 30px;
 }
 
-/* Tira o "tapete branco" gigante depois do hero */
+/* PROVA */
 .proof .container {
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
-/* mobile */
+/* MOBILE */
 @media (max-width: 768px) {
   .hero .container {
     padding-top: 40px;
-    padding-bottom: 10px;
+    padding-bottom: 0;
   }
 
   .hero-image {
-  display: block;
-  margin: 8px auto 0;
-  max-width: 820px;
-}
+    margin: 6px auto 0;
+    max-width: 92%;
+    border-radius: 20px;
+  }
 
   .proof .container {
-    padding-top: 14px;
-    padding-bottom: 14px;
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
 }
-
