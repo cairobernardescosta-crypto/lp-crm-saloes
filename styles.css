@@ -160,6 +160,17 @@ li {
   background: #ffffff;
 }
 
+/* IMAGEM DO MECANISMO (POR QUE FUNCIONA) */
+.mechanism-image {
+  display: block;
+  width: 100%;
+  max-width: 920px;
+  margin: 22px auto 0;
+  height: auto;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+}
+
 /* OFERTA */
 .offer {
   background: #f5f5f5;
@@ -223,5 +234,12 @@ footer {
   .testimonial .quote {
     font-size: 16px;
   }
-}
 
+  /* IMAGEM DO MECANISMO NO MOBILE */
+  .mechanism-image {
+    max-width: 96%;
+    margin-top: 16px;
+    border-radius: 12px;
+    box-shadow: 0 10px 22px rgba(0,0,0,0.16);
+  }
+}
