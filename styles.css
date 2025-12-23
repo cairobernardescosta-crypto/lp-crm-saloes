@@ -123,8 +123,17 @@ li {
   text-align: center;
 }
 
+/* removido max-width diferente do resto pra não "parecer torto" */
 .testimonial .container {
+  max-width: 960px;
+}
+
+/* controla a largura do texto sem quebrar o alinhamento do layout */
+.testimonial .quote,
+.testimonial .author {
   max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .testimonial .quote {
