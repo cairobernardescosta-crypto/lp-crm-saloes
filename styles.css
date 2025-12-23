@@ -123,12 +123,10 @@ li {
   text-align: center;
 }
 
-/* removido max-width diferente do resto pra não "parecer torto" */
 .testimonial .container {
   max-width: 960px;
 }
 
-/* controla a largura do texto sem quebrar o alinhamento do layout */
 .testimonial .quote,
 .testimonial .author {
   max-width: 760px;
@@ -169,15 +167,41 @@ li {
   background: #ffffff;
 }
 
-/* IMAGEM DO MECANISMO (POR QUE FUNCIONA) */
+/* MECANISMO */
+.mechanism .container {
+  text-align: center; /* centraliza imagem e botão */
+}
+
+/* mantém texto e lista alinhados e com largura boa */
+.mechanism h2,
+.mechanism p,
+.mechanism ul {
+  text-align: left;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* tira buracos grandes entre lista, imagem e botão */
+.mechanism ul {
+  margin-top: 14px;
+  margin-bottom: 10px;
+}
+
+/* IMAGEM DO MECANISMO */
 .mechanism-image {
   display: block;
   width: 100%;
   max-width: 920px;
-  margin: 22px auto 0;
+  margin: 14px auto 12px; /* ajusta o respiro em cima e embaixo */
   height: auto;
   border-radius: 14px;
   box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+}
+
+/* botão colado do jeito certo */
+.mechanism .btn {
+  margin-top: 10px;
 }
 
 /* OFERTA */
@@ -244,11 +268,14 @@ footer {
     font-size: 16px;
   }
 
-  /* IMAGEM DO MECANISMO NO MOBILE */
   .mechanism-image {
     max-width: 96%;
-    margin-top: 16px;
+    margin: 12px auto 10px;
     border-radius: 12px;
     box-shadow: 0 10px 22px rgba(0,0,0,0.16);
+  }
+
+  .mechanism ul {
+    margin-bottom: 8px;
   }
 }
